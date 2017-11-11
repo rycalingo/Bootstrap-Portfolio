@@ -1,0 +1,222 @@
+* { box-sizing: border-box; }
+
+h1 { 
+	font-size: 1.8em;
+	font-weight: 900;
+}
+h2 {
+	font-size: 1.6em;
+	font-weight: 800;
+}
+h3 {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+h4 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+h1, h2, h3, h4 { font-family: 'Georgia', Times, Times New Roman, serif; }
+
+p, ol, li, a { 
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; color: #777777;
+	font-size: 16px; }
+
+p, ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 1.3em;
+}
+
+a { 
+	font-size: 1em;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+label, textarea, textarea { 
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; color: #777777;
+	font-size: 16px;
+}	
+.clearfix {
+  overflow: auto;
+}
+
+body {
+	background: url('../img/hypnotize.png') repeat;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	background: #ffffff;
+	border-bottom: 1px solid #cccccc;
+}
+
+.name_title {
+	padding: 20px 10px;
+	background: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	display: inline-block;
+}
+
+nav {
+	width: 270px;
+	height: 70px;
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+}
+
+nav ul {
+	margin: 10% 0;
+	text-align: center;
+}
+nav ul li {
+	float: left;
+	display: inline;
+}
+nav li:nth-child(n+2) {
+	border-left: 1px solid #C7CACD;
+}
+nav a {
+	display: block;
+	padding: 0 18px;
+	vertical-align: middle;
+}
+nav a:hover {
+	color: #ffffff;
+}
+nav li:hover { background:  #4aaaa5; }
+
+.stage {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.stage .wrapper > * {
+	min-height: 100px;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+.title {
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #C7CACD;
+	color: #4aaaa5;
+}
+aside .title {
+	border-bottom: 1px solid #C7CACD;
+}
+.main_content {
+	width: 650px;
+	margin-right:35px;
+	margin-bottom: 40px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+}
+.main_content p {
+	margin-bottom: 5px;
+}
+img#profile_pic {
+	float: left;
+	width: 25%;
+	margin: 0 25px 25px 0;
+}
+aside {
+	width: 270px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+}
+#connect .icon {
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+}
+.holder {
+
+}
+.box {
+	float: left;
+	width: 289px;
+	height: 200px;
+	margin-bottom: 20px;
+	background: #AFB0B5;
+	position: relative;
+	overflow: hidden;
+}
+.box:nth-child(odd) {
+	margin-right: 30px;
+}
+.box img {
+	width: 400px;
+	display: block;
+	position: relative;
+	left: -50px;
+}
+.box span {
+	display: block;
+	width: inherit;
+	position: absolute;
+	bottom: 10px;
+	padding: 10px 0;
+	background: #4aaaa5;
+}
+.box_title {
+	text-align: center;
+	color: #ffffff;
+}
+label, input, textarea {
+	font-size: 16px;
+	display: block;
+}
+label {
+	margin: 10px 0;
+}
+input {
+	width: 100%;
+	height: 32px;
+	border-width: 1px;
+	border-color: #333333;
+	padding: 3px;
+}
+textarea{ 
+	width: 100%;
+	min-height: 200px;
+	border-color: #333333;
+	padding: 3px;
+}
+button {
+	box-shadow: none;
+	border-radius: 0;
+}
+#submit_btn {
+	margin-top: 10px;
+	font-size: 16px;
+	padding: 10px 20px;
+    background: #4aaaa5;
+    color: #ffffff;
+    border: none;
+}
+footer {
+	width: 100%;
+	height: 68px;
+	padding: 2% 0;
+	background: #666666;
+	position: fixed;
+	bottom: 0;
+	border-top: 5px solid #4aaaa5;
+}
+footer p {
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+}
+
