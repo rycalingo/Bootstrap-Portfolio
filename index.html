@@ -2,41 +2,60 @@
 <html lang="en-us">
 	<meta charset="UTF-8">
 	<head>
-		<title>Basic Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		<title>Bootstrap Portfolio</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">		
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 	
 	<body>
 		<header>
-		  <div class="wrapper">
 
-			<div class="name_title">
-				<h1>RYAN CALINGO</h1>
-			</div><!-- name title -->
+	  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Ryan Calingo</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./index.html">About <span class="sr-only">(current)</span></a></li>
+              <li><a href="./portfolio.html">Portfolio</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
 
-			<nav id="main_nav">
-			  <ul>
+<!-- 			<nav id="main_navX" class="nav navbar-nav navbar-right col-xs-12 col-md-offset-1">
+			  <ul class="nav navbar-nav">
 				<li><a href="./index.html" id="nav_about" class="nav_link" title="about">About</a></li>
-				<li><a href="portfolio.html" id="nav_portfolio" class="nav_link" title="portfolio">Portfolio</a></li>
+				<li><a href="./portfolio.html" id="nav_portfolio" class="nav_link" title="portfolio">Portfolio</a></li>
 				<li><a href="./contact.html" id="nav_contact" class="nav_link" title="contact">Contact</a></li>
 			  </ul>
-			</nav>  <!-- main nav -->
+			</nav> -->  <!-- main nav -->
 
-		  </div>  <!-- header wrapper -->
 		</header>
 
 		<section class="stage">
-		  <div class="wrapper">
-			<div class="main_content">
+		  <div class="wrapper row">
+			<div class="main_content col-md-8">
 				<h2 class="title">About Me</h2>  <!-- ABOUT ME -->
 				<img src="./assets/img/profile_pic.jpg" id="profile_pic" alt="profile picture">
-				<p>I'm a Front-End Developer who enjoys building modern, innovative, dynamic, and user friendly websites.<br>My goal is to provide users a great experience by taking something that is complex and make into something that is simple, clean, easy to use and engaging.</p>
+				<p>I'm a Front-End Developer who enjoys building modern, innovative, dynamic, and user friendly websites. My goal is to provide users a great experience by taking something that is complex and make into something that is simple, clean, easy to use and engaging.</p>
 				<p>I have good logical skills, a keen attention to detail, an eagerness to explore new ideas, I see challenges as a tool to hepl me grow and improve my skills as a developer.<br>The great thing about being a developer is that it is always changing so you are alway being challenge to think differently which makes it more interesting, there is always something new to learn.</p>
 			</div>  <!-- ABOUT ME -->
 
 
-			<aside id="connect">
+			<aside id="connect" class="col-md-3 col-md-offset-1">
 				<h4 class="title">Connect</h4>
 				<div class="icon_holder">
 					<a href="" title="gitHub"><img src="./assets/img/if_github_circle_black_107161.svg" alt="gitHub Icon" class="icon"></a>
@@ -49,9 +68,11 @@
 		  </div>  <!-- main stage wrapper -->
 		</section>  <!-- main stage -->
 
-		<footer>
+		<footer class="row">
 			<p>Copyright &copy; 2017 Ryan Calingo</p>
 		</footer>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>
